@@ -4,6 +4,7 @@ jdk:
 script:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   - mvn test-compile -pl . -am
+  - mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=io.github.thebusybiscuit.slimefun4.testing.tests.settings.TestMaterialTagSetting#testAllowedValue -DnondexRuns=10
 
 notifications:
   email:brintodibyendu@gmail.com
