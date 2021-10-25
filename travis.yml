@@ -1,5 +1,6 @@
 language: java
 jdk:
   - openjdk8
-before_install:
-  - pip install --user codecov
+script: ./mvnw clean install
+notifications:
+  email:brintodibyendu@gmail.com
