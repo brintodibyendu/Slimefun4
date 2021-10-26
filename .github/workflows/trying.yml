@@ -13,5 +13,7 @@ jobs:
         with:
           java-version: '8'
           distribution: 'adopt'
+      - name: Got to commit
+        run: git checkout 282367d6ffaf60d79f1fa357d90b01ca154c44f2
       - name: Build with Maven
         run: mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=io.github.thebusybiscuit.slimefun4.testing.tests.settings.TestMaterialTagSetting.testAllowedValue -DnondexRuns=10
